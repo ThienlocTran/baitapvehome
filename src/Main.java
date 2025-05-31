@@ -27,7 +27,7 @@ public class Main {
                     case 2 -> ptb1();
                     case 3 -> soChinhPhuong();
                     case 4 -> soNguyenTo();
-//                    case 5 -> checkOddOrEven();
+                    case 5 -> checkOddOrEven();
 //                    case 6 -> calDtCvHCN();
 //                    case 7 -> calculateInterest();
                     default -> System.out.println("Nhập lại lựa chọn!");
@@ -35,7 +35,20 @@ public class Main {
 
             } while (choice != 5);
         }
-    public static void calculator(){
+
+        public static void checkOddOrEven(){
+       /* Bài 1
+        Kiểm tra số chẵn hay lẻ:
+
+        Nhập vào từ bàn phím một số nguyên.
+
+        In ra kết quả cho biết số người dùng nhập là chẵn hay lẻ.*/
+
+        System.out.print("Enter a number: ");
+        int number = scanner.nextInt();
+        System.out.print("Number is " + (number % 2 == 0 ? "even" : "odd"));
+    }
+        public static void calculator(){
         float a,b;
         while(true) {
             System.out.print("Nhập a: ");
@@ -58,7 +71,7 @@ public class Main {
         }
     }
 
-    public static void ptb1(){
+        public static void ptb1(){
         double a,b,c;
         System.out.print("Nhập a: ");
         a = scanner.nextInt();
@@ -80,7 +93,7 @@ public class Main {
         }
     }
 
-    public static void soChinhPhuong(){
+        public static void soChinhPhuong(){
         int number;
         while(true) {
             System.out.println("Nhập số cần kiểm tra: ");
